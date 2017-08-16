@@ -26,15 +26,11 @@ function setup() {
 
 /*
 function mousePressed() {
-
     attractors.push(new Attractor(mouseX, mouseY));
-
-}
 */
 
 function draw() {
     //background(0);
-
     for (i = 0; i < particles.length; i++) {
         var p = particles[i];
         p.id = i
@@ -71,8 +67,6 @@ function Attractor(posx, posy) {
         text(floor(this.mass), this.position.x + 10, this.position.y)
         */
     }
-
-
 }
 
 function Particle(massmin, massmax) {
@@ -162,4 +156,4 @@ function Particle(massmin, massmax) {
         this.update();
         this.renderB();
     }
-}
+} //end of Particle
